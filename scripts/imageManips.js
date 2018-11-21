@@ -41,16 +41,16 @@ function manipulate(type, r, g, b, a) {
   }
 
   switch (type) {
-    case "invert":
+    case 'invert':
       return makePixelInverted(r, g, b, a);
-    case "chroma":
+    case 'chroma':
       return makePixelChroma(r, g, b, a);
-    case "greyscale":
+    case 'greyscale':
       return makePixelGreyScale(r, g, b, a);
-    case "vibrant":
+    case 'vibrant':
       return makePixelVibrant(r, g, b, a);
     default:
-      console.log("Not a valid image manipulation");
+      console.log('Not a valid image manipulation');
       break;
   }
 }
